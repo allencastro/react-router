@@ -1,0 +1,88 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: montserrat;
+}
+
+nav{
+    background: #0050A1;
+    height: 10%;
+    min-height: 60px;
+    max-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+label.logo{
+    color: rgb(243, 239, 239);
+    font-size: 2rem;
+    line-height: 60px;
+    padding: 0 10%;
+    font-weight: 700;
+}
+
+.hamburger{
+    display: block;
+    margin: 0;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.checkbtn{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+.nav{
+    flex-direction: row;
+    margin: 0;
+    margin-right: 10%;
+}
+
+nav .nav_list{
+    margin: 0 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+nav .nav_list a{
+    color: rgb(243, 239, 239);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 0 10px; /* Add space on the sides */
+}
+
+nav .nav_list a.active{
+    color: rgb(207, 207, 207);
+}
+
+nav .nav_list a:hover{
+    color: white;
+    background: #000000;
+    transition: .5s;
+}
+
+nav .nav_list a.active:hover{
+    background: none;
+    cursor: default;
+    color: rgb(243, 239, 239);
+}   
